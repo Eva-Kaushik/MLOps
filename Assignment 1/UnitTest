@@ -1,0 +1,46 @@
+      
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.8'
+      architecture: 'x64'
+
+  - script: |
+      python -m pip install --upgrade pip
+      pip install pytest codecov pydocstyle pytest-cov pylint pylint_junit flake8==3.7.* flake8_formatter_junit_xml==0.0.*
+    displayName: 'Install testing dependencies'
+
+  - script: |
+      pip install -r data-science/environment/train-requirements.txt
+    displayName: 'Install project requirements'
+
+  - script: |   
+      flake8 data-science/src/ --output-file=flake8-testresults.xml --format junit-xml --exit-zero
+    displayName: 'Run code quality tests (Flake8)'
+
+  - script: |      
+      pylint data-science/src/ --output-format=pylint_junit.JUnitReporter --exit-zero > pylint-testresults.xml
+    displayName: 'Run code quality tests (Pylint)'
+
+  - script: |
+      pytest -v C:\Users\ekaushik\Desktop\MLOps\Assignment1\prep.py --doctest-modules --junitxml=prep-testresults.xml --cov=src --cov-append --cov-report=xml:prep-coverage.xml --cov-report=html:prep-htmlcov
+    displayName: 'Run unit tests for prep.py'
+
+  - script: |
+      pytest -v C:\Users\ekaushik\Desktop\MLOps\Assignment1\train.py --doctest-modules --junitxml=train-testresults.xml --cov=src --cov-append --cov-report=xml:train-coverage.xml --cov-report=html:train-htmlcov
+    displayName: 'Run unit tests for train.py'
+
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/*-testresults.xml'
+      testRunTitle: '$(Agent.OS) - $(Build.BuildNumber)[$(Agent.JobName)] - Python $(python.version) - Linting and Unit Test results'
+    condition: succeededOrFailed()
+    displayName: 'Publish unit test results'
+
+  - task: PublishCodeCoverageResults@1
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: 'coverage.xml'
+      reportDirectory: 'htmlcov'
+    displayName: 'Publish Coverage Results'
