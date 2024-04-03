@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/ekaushik/Desktop/MLOps/Assignment%201/mlruns/0/6d29df10df4647da85e50682d477844e/artifacts
+end_time: 1712149213494
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6d29df10df4647da85e50682d477844e
+run_name: spiffy-skunk-289
+run_uuid: 6d29df10df4647da85e50682d477844e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712149213330
+status: 3
+tags: []
+user_id: ekaushik

@@ -1,0 +1,50 @@
+2024-04-03 17:58:14,656 INFO    MainThread:12040 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-04-03 17:58:14,657 INFO    MainThread:12040 [wandb_setup.py:_flush():76] Configure stats pid to 12040
+2024-04-03 17:58:14,657 INFO    MainThread:12040 [wandb_setup.py:_flush():76] Loading settings from C:\Users\ekaushik\.config\wandb\settings
+2024-04-03 17:58:14,657 INFO    MainThread:12040 [wandb_setup.py:_flush():76] Loading settings from c:\Users\ekaushik\Desktop\MLOps\Assignment 1\wandb\settings
+2024-04-03 17:58:14,659 INFO    MainThread:12040 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'mode': 'dryrun'}
+2024-04-03 17:58:14,660 INFO    MainThread:12040 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-03 17:58:14,660 INFO    MainThread:12040 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-03 17:58:14,660 INFO    MainThread:12040 [wandb_init.py:_log_setup():527] Logging user logs to c:\Users\ekaushik\Desktop\MLOps\Assignment 1\wandb\offline-run-20240403_175814-qjmrryhm\logs\debug.log
+2024-04-03 17:58:14,661 INFO    MainThread:12040 [wandb_init.py:_log_setup():528] Logging internal logs to c:\Users\ekaushik\Desktop\MLOps\Assignment 1\wandb\offline-run-20240403_175814-qjmrryhm\logs\debug-internal.log
+2024-04-03 17:58:14,661 INFO    MainThread:12040 [wandb_init.py:_jupyter_setup():473] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001C1AF600810>
+2024-04-03 17:58:14,661 INFO    MainThread:12040 [wandb_init.py:init():567] calling init triggers
+2024-04-03 17:58:14,661 INFO    MainThread:12040 [wandb_init.py:init():574] wandb.init called with sweep_config: {}
+config: {}
+2024-04-03 17:58:14,662 INFO    MainThread:12040 [wandb_init.py:init():592] re-initializing run, found existing run on stack: pa21rqbl
+2024-04-03 17:58:14,664 INFO    MainThread:12040 [wandb_run.py:_finish():2052] finishing run pa21rqbl
+2024-04-03 17:58:14,664 INFO    MainThread:12040 [wandb_run.py:_atexit_cleanup():2292] got exitcode: 0
+2024-04-03 17:58:14,664 INFO    MainThread:12040 [wandb_run.py:_restore():2275] restore
+2024-04-03 17:58:14,664 INFO    MainThread:12040 [wandb_run.py:_restore():2281] restore done
+2024-04-03 17:58:15,714 INFO    MainThread:12040 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-04-03 17:58:15,714 INFO    MainThread:12040 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-04-03 17:58:17,774 INFO    MainThread:12040 [wandb_init.py:init():617] starting backend
+2024-04-03 17:58:17,774 INFO    MainThread:12040 [wandb_init.py:init():621] setting up manager
+2024-04-03 17:58:17,778 INFO    MainThread:12040 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-04-03 17:58:17,778 INFO    MainThread:12040 [wandb_init.py:init():629] backend started and connected
+2024-04-03 17:58:17,778 INFO    MainThread:12040 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2024-04-03 17:58:17,778 INFO    MainThread:12040 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-04-03 17:58:17,778 INFO    MainThread:12040 [wandb_init.py:init():721] updated telemetry
+2024-04-03 17:58:17,788 INFO    MainThread:12040 [wandb_init.py:init():754] communicating run to backend with 90.0 second timeout
+2024-04-03 17:58:17,799 INFO    MainThread:12040 [wandb_init.py:init():805] starting run threads in backend
+2024-04-03 17:58:18,298 INFO    MainThread:12040 [wandb_run.py:_console_start():2323] atexit reg
+2024-04-03 17:58:18,298 INFO    MainThread:12040 [wandb_run.py:_redirect():2178] redirect: wrap_raw
+2024-04-03 17:58:18,298 INFO    MainThread:12040 [wandb_run.py:_redirect():2243] Wrapping output streams.
+2024-04-03 17:58:18,298 INFO    MainThread:12040 [wandb_run.py:_redirect():2268] Redirects installed.
+2024-04-03 17:58:18,298 INFO    MainThread:12040 [wandb_init.py:init():848] run started, returning control to user process
+2024-04-03 17:58:18,514 INFO    MainThread:12040 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-04-03 17:58:18,515 INFO    MainThread:12040 [wandb_init.py:_pause_backend():438] pausing backend
+2024-04-03 17:58:56,480 INFO    MainThread:12040 [wandb_init.py:_resume_backend():443] resuming backend
+2024-04-03 17:58:56,596 INFO    MainThread:12040 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-04-03 17:58:56,596 INFO    MainThread:12040 [wandb_init.py:_pause_backend():438] pausing backend
+2024-04-03 17:59:41,975 INFO    MainThread:12040 [wandb_init.py:_resume_backend():443] resuming backend
+2024-04-03 17:59:41,982 INFO    MainThread:12040 [wandb_run.py:_config_callback():1347] config_cb None None {'raw_data': None, 'train_data': None, 'val_data': None, 'test_data': None}
+2024-04-03 17:59:41,985 INFO    MainThread:12040 [wandb_run.py:_finish():2052] finishing run qjmrryhm
+2024-04-03 17:59:41,987 ERROR   MainThread:12040 [jupyter.py:save_history():437] Run pip install nbformat to save notebook history
+2024-04-03 17:59:41,987 INFO    MainThread:12040 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-04-03 17:59:41,987 INFO    MainThread:12040 [wandb_init.py:_jupyter_teardown():455] cleaning up jupyter logic
+2024-04-03 17:59:41,988 INFO    MainThread:12040 [wandb_run.py:_atexit_cleanup():2292] got exitcode: 0
+2024-04-03 17:59:41,988 INFO    MainThread:12040 [wandb_run.py:_restore():2275] restore
+2024-04-03 17:59:41,988 INFO    MainThread:12040 [wandb_run.py:_restore():2281] restore done
+2024-04-03 17:59:43,104 INFO    MainThread:12040 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-04-03 17:59:43,104 INFO    MainThread:12040 [wandb_run.py:_footer_history_summary_info():3952] rendering summary

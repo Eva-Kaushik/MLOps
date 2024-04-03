@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/ekaushik/Desktop/MLOps/Assignment%201/mlruns/0/4e455fb543bc4639b741f1b9279106e3/artifacts
+end_time: 1712149213305
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4e455fb543bc4639b741f1b9279106e3
+run_name: monumental-kit-341
+run_uuid: 4e455fb543bc4639b741f1b9279106e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712148905668
+status: 3
+tags: []
+user_id: ekaushik
